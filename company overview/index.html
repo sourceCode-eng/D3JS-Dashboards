@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D3 Bar Charts</title>
+<style>
+  .bar {
+    fill: steelblue;
+  }
+
+  .bar:hover {
+    fill: orange;
+  }
+
+  .axis {
+    font: 12px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+</style>
+</head>
+<body>
+
+<h1>Enter Stock Symbol:</h1>
+<input type="text" id="symbolInput">
+<button id="searchButton">Search</button>
+
+<h1>Currency Distribution</h1>
+<svg id="currencyChart"></svg>
+
+<h1>Sector Distribution</h1>
+<svg id="sectorChart"></svg>
+
+<h1>Shares of Each Company</h1>
+<svg id="sharesChart"></svg>
+
+<h2>Stocks</h2>
+<ul id="stockList"></ul>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="charts.js"></script> <!-- JavaScript file for creating charts -->
+</body>
+</html>
