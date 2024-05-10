@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Comparison</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <h1>Stock Comparison</h1>
+  <label for="symbol1">Enter Stock Symbol 1:</label>
+  <input type="text" id="symbol1" name="symbol1" value="AAPL">
+  <br>
+  <label for="symbol2">Enter Stock Symbol 2:</label>
+  <input type="text" id="symbol2" name="symbol2" value="MSFT">
+  <br>
+  <label for="days">Select Number of Days:</label>
+  <input type="range" id="days" name="days" min="1" max="365" value="30">
+  <span id="selectedDays">30 days</span>
+  <div id="chart"></div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
